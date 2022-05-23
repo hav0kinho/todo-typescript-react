@@ -1,0 +1,60 @@
+:root {
+  --secondary-color: #444444;
+  --completed-color: #477738;
+  --orange-color: #ff9900;
+  --button-complete-color: #3e9e78;
+  --button-delete-color: rgb(255, 65, 65);
+}
+.todo_element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: var(--secondary-color);
+  transition: 0.4s;
+}
+.todo_element_completed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: var(--completed-color);
+  transition: 0.4s;
+}
+
+.todo_text h1 {
+  color: var(--orange-color);
+}
+
+.todo_buttons button {
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.button_green {
+  border: 2px solid var(--button-complete-color);
+  color: var(--button-complete-color);
+  transition: 0.3s;
+}
+
+.button_green:hover {
+  color: white;
+  background-color: var(--button-complete-color);
+}
+
+.button_red {
+  border: 2px solid var(--button-delete-color);
+  color: var(--button-delete-color);
+  transition: 0.3s;
+}
+
+.button_red:hover {
+  color: white;
+  background-color: var(--button-delete-color);
+}
